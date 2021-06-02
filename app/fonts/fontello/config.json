@@ -1,0 +1,38 @@
+{
+  "name": "fontello",
+  "css_prefix_text": "ic-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "fb05db7b64593015a4f7326c8f9dec36",
+      "css": "arrow-left",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M153.9 257.2L324.9 0.1 490.2 0.1 319.2 257.2 153.9 257.2ZM0 491.4L79.8 365.7 245.1 365.7 165.3 491.4 490.2 982.6 324.9 982.6 0 491.4Z",
+        "width": 490
+      },
+      "search": [
+        "arrow-left"
+      ]
+    },
+    {
+      "uid": "434a4e6ca040ab00e6b450da7fce18b4",
+      "css": "arrow-right",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M336.3 257.2L165.3 0.1 0 0.1 171 257.2 336.3 257.2ZM490.2 491.4L410.4 365.7 245.1 365.7 324.9 491.4 0 982.6 165.3 982.6 490.2 491.4Z",
+        "width": 490
+      },
+      "search": [
+        "arrow-right"
+      ]
+    }
+  ]
+}

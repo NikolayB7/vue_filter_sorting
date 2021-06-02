@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>VUE</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+
+    <meta property="og:image" content="images/dest/preview.jpg">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body class="p-1.5">
+
+<header>
+    <header>
+
+    </header>
+</header>
+
+<main>
+    <div id="filter" class="filter">
+        <div class="flex w-full">
+            <div class="flex justify-start w-3/12 pr-7">
+                <div  class="w-full">
+                    <v-select @input="filterChange" ref="filterRef" class="w-full" :options="options" v-model="filterVal" :reduce="option => option.slug"
+                              label="value" :placeholder="`Выберите услугу`"></v-select>
+                </div>
+
+            </div>
+            <transition-group  class="w-6/12" name="flip-list" tag="div">
+                <div v-for="(item, idx) in restaurantsList" :key="`place${idx}`">
+
+                    <div class="font-bold text-lg">{{item.placeName}}</div>
+                    <div class="pl-4">
+                        <div class="text-sm" v-for="(i,index) in item.data" :key="`el${index}`" :data-service="i.slug">
+                            {{i.value}}
+                        </div>
+                    </div>
+                </div>
+            </transition-group>
+        </div>
+    </div>
+</main>
+
+<footer>
+
+</footer>
+
+<script src="libs/vue.js"></script>
+<script src="https://unpkg.com/vue-select@latest"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

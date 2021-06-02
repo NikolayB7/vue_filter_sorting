@@ -1,0 +1,3 @@
+
+.ic-arrow-left:before { content: '\e800'; } /* '' */
+.ic-arrow-right:before { content: '\e801'; } /* '' */
